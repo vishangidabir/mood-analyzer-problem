@@ -19,14 +19,14 @@ public class MoodAnalyser {
         System.out.println("Welcome to Mood Analyser Problem");
     }
 
+    //Method that return mood
     public String analysisMood(String message) {
         if (message.equalsIgnoreCase("I am in sad Mood")) {
             mood = "SAD";
-            return mood;
         }
         else {
             mood = "HAPPY";
-            return mood;
         }
+        return mood;
     }
 }
