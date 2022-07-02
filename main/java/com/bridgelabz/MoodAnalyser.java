@@ -4,9 +4,13 @@ public class MoodAnalyser {
     String mood;
 
     public String analysisMood(String message) {
-        if (message.equalsIgnoreCase("I am in sad Mood"))
-            mood =  "SAD";
-        return mood;
+        if (message.equalsIgnoreCase("I am in sad Mood")) {
+            mood = "SAD";
+            return mood;
+        }
+        else {
+            mood = "HAPPY";
+            return mood;
+        }
     }
-    
 }
