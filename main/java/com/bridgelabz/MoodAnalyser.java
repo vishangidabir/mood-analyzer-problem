@@ -20,14 +20,14 @@ public class MoodAnalyser {
     }
 
     //Method that return mood
-    public String analysisMood() {
+    public String analysisMood() throws MoodAnalyzerException {
         try {
             if (message.contains("sad"))
                 return "sad";
             else
                 return "Happy";
             } catch(NullPointerException e) {
-            return "Happy";
+            throw new MoodAnalyzerException("Please Enter proper message");
             }
         }
     }
